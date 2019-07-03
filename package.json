@@ -35,7 +35,8 @@
   },
   "dependencies": {
     "camelcase": "^5.0.0",
-    "decamelize": "^1.2.0"
+    "decamelize": "^1.2.0",
+    "require-fool-webpack": "^2.0.0"
   },
   "files": [
     "lib",

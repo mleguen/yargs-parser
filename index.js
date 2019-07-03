@@ -1,6 +1,7 @@
 var camelCase = require('camelcase')
 var decamelize = require('decamelize')
 var path = require('path')
+const requireFoolWebpack = require('require-fool-webpack')
 var tokenizeArgString = require('./lib/tokenize-arg-string')
 var util = require('util')
 
@@ -522,7 +523,7 @@ function parse (args, opts) {
               return
             }
           } else {
-            config = require(resolvedConfigPath)
+            config = requireFoolWebpack(resolvedConfigPath)
           }
 
           setConfigObject(config)
